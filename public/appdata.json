@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://example.com/images/app1.png",
+    "title": "ChatMaster AI",
+    "companyName": "NeuroTech Inc.",
+    "id": 1,
+    "description": "An AI chatbot to help you with daily tasks, learning, and fun conversations.",
+    "size": 52,
+    "reviews": 23100,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 14600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app2.png",
+    "title": "PhotoPro Editor",
+    "companyName": "PixelForge",
+    "id": 2,
+    "description": "Advanced photo editing with AI filters and one-touch enhancements.",
+    "size": 84,
+    "reviews": 8900,
+    "ratingAvg": 4.3,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app3.png",
+    "title": "BudgetPal",
+    "companyName": "MoneyWave",
+    "id": 3,
+    "description": "Track your expenses and manage your finances with ease.",
+    "size": 28,
+    "reviews": 30500,
+    "ratingAvg": 4.8,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 22000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app4.png",
+    "title": "FitnessTrack+",
+    "companyName": "ActiveCore",
+    "id": 4,
+    "description": "Monitor workouts, count steps, and meet your health goals.",
+    "size": 65,
+    "reviews": 17800,
+    "ratingAvg": 4.5,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 9000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app5.png",
+    "title": "MindfulSpace",
+    "companyName": "ZenTech Labs",
+    "id": 5,
+    "description": "Daily meditation, breathing exercises, and stress relief tools.",
+    "size": 37,
+    "reviews": 9700,
+    "ratingAvg": 4.7,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 5400 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app6.png",
+    "title": "LearnMate",
+    "companyName": "EduNova",
+    "id": 6,
+    "description": "Interactive courses and quizzes for students and lifelong learners.",
+    "size": 91,
+    "reviews": 43800,
+    "ratingAvg": 4.2,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 17800 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app7.png",
+    "title": "GameHub Arcade",
+    "companyName": "PlayNetics",
+    "id": 7,
+    "description": "Play dozens of mini-games in one fun-packed app.",
+    "size": 102,
+    "reviews": 12900,
+    "ratingAvg": 4.0,
+    "downloads": 980000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app8.png",
+    "title": "NoteFlow",
+    "companyName": "CloudKeep",
+    "id": 8,
+    "description": "A simple yet powerful note-taking app with sync across devices.",
+    "size": 18,
+    "reviews": 8300,
+    "ratingAvg": 4.4,
+    "downloads": 560000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 3900 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app9.png",
+    "title": "Language Loop",
+    "companyName": "LinguaTech",
+    "id": 9,
+    "description": "Learn over 20 languages through immersive lessons and games.",
+    "size": 77,
+    "reviews": 15200,
+    "ratingAvg": 4.6,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4700 },
+      { "name": "5 star", "count": 9400 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app10.png",
+    "title": "QuickChef Recipes",
+    "companyName": "CookEasy",
+    "id": 10,
+    "description": "Find quick, easy, and delicious recipes for any occasion.",
+    "size": 46,
+    "reviews": 6400,
+    "ratingAvg": 4.1,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app11.png",
+    "title": "SafeVault",
+    "companyName": "SecureStack",
+    "id": 11,
+    "description": "Securely store passwords, documents, and sensitive data.",
+    "size": 25,
+    "reviews": 9800,
+    "ratingAvg": 4.9,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app12.png",
+    "title": "DailyPlanner Pro",
+    "companyName": "PlanWise Inc",
+    "id": 12,
+    "description": "Organize your tasks, set reminders, and stay productive every day.",
+    "size": 33,
+    "reviews": 12300,
+    "ratingAvg": 4.5,
+    "downloads": 675000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 6700 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app13.png",
+    "title": "WeatherNow",
+    "companyName": "SkyData Inc.",
+    "id": 13,
+    "description": "Live weather updates, forecasts, and severe weather alerts worldwide.",
+    "size": 49,
+    "reviews": 15300,
+    "ratingAvg": 4.3,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 7200 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app14.png",
+    "title": "CryptoTrack",
+    "companyName": "BlockBit Labs",
+    "id": 14,
+    "description": "Monitor cryptocurrency prices, set alerts, and manage your crypto portfolio.",
+    "size": 41,
+    "reviews": 8900,
+    "ratingAvg": 4.0,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1300 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2300 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app15.png",
+    "title": "StoryTime Kids",
+    "companyName": "TinyTales Studios",
+    "id": 15,
+    "description": "Animated bedtime stories, audiobooks, and reading games for children.",
+    "size": 72,
+    "reviews": 7400,
+    "ratingAvg": 4.8,
+    "downloads": 620000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1900 },
+      { "name": "5 star", "count": 4700 }
+    ]
+  }
+]
