@@ -6,13 +6,46 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `relative block px-4 py-2 rounded transition-all duration-300 ${
+              isActive
+                ? "text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2] before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[1px] before:w-full before:bg-gradient-to-r before:from-[#632EE3] before:to-[#9F62F2]"
+                : "hover:bg-pink-500 hover:text-white"
+            }`
+          }
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink>Apps</NavLink>
+        <NavLink
+          to="/apps"
+          className={({ isActive }) =>
+            `relative block px-4 py-2 rounded transition-all duration-300 ${
+              isActive
+                ? "text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2] before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[1px] before:w-full before:bg-gradient-to-r before:from-[#632EE3] before:to-[#9F62F2]"
+                : "hover:bg-pink-500 hover:text-white"
+            }`
+          }
+        >
+          Apps
+        </NavLink>
       </li>
       <li>
-        <NavLink>Installation</NavLink>
+        <NavLink
+          to="installation"
+          className={({ isActive }) =>
+            `relative block px-4 py-2 rounded transition-all duration-300 ${
+              isActive
+                ? "text-transparent bg-clip-text bg-gradient-to-r from-[#632EE3] to-[#9F62F2] before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[1px] before:w-full before:bg-gradient-to-r before:from-[#632EE3] before:to-[#9F62F2]"
+                : "hover:bg-pink-500 hover:text-white"
+            }`
+          }
+        >
+          Installation
+        </NavLink>
       </li>
     </>
   );

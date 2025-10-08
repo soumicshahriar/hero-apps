@@ -12,11 +12,11 @@ const AppData = ({ appData }) => {
 
   return (
     <div className=" bg-base-100 shadow-sm p-2 rounded">
-      <figure>
+      <figure className="h-32 overflow-hidden">
         <img
-          className="rounded"
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
+          className="rounded w-full h-full object-cover"
+          src={image}
+          alt={title}
         />
       </figure>
       <div className="text-start mt-2">

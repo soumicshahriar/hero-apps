@@ -4,6 +4,7 @@ import { FaGooglePlay } from "react-icons/fa6";
 import heroImg from "../../assets/hero.png";
 import { useApp } from "../Hooks/useApp";
 import AppData from "../Components/AppData";
+import { Link } from "react-router";
 
 const Home = () => {
   const { appsData, loading, error } = useApp();
@@ -95,9 +96,11 @@ const Home = () => {
         ))}
       </div>
 
-      <button className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] px-4 py-2 rounded text-white font-semibold cursor-pointer">
-        See All
-      </button>
+      <Link to="/apps">
+        <button className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] px-4 py-2 rounded text-white font-semibold cursor-pointer">
+          See All
+        </button>
+      </Link>
     </div>
   );
 };
