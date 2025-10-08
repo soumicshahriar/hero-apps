@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import { useApp } from "../Hooks/useApp";
 import { formatDownloads, formatReviews } from "../utils/Average";
@@ -15,11 +15,13 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import toast, { Toaster } from "react-hot-toast";
 
 const AppDetails = () => {
   const params = useParams();
   const appId = parseInt(params.id);
   const { appsData, loading } = useApp();
+  const [installed, setInstalled] = useState(false);
 
   if (loading) return <p className="text-center py-10 text-lg">Loading...</p>;
 
@@ -41,8 +43,23 @@ const AppDetails = () => {
   const totalDownloads = formatDownloads(downloads);
   const totalReviews = formatReviews(reviews);
 
+  const handleInstall = () => {
+    setInstalled(true);
+    toast.success(`${title} has been successfully installed!`, {
+      duration: 3000,
+      position: "top-center",
+      style: {
+        background: "#001931",
+        color: "#fff",
+        borderRadius: "10px",
+      },
+    });
+  };
+
   return (
     <div className="bg-base-200 py-6 px-4 sm:px-6 lg:px-8">
+      {/* Toast Container */}
+      <Toaster />
       <div className="container mx-auto min-h-screen">
         {/* App Header Section */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
@@ -91,8 +108,17 @@ const AppDetails = () => {
             </div>
 
             <div className="flex justify-center lg:justify-start">
-              <button className="btn btn-primary mt-6 px-6 py-2 text-base sm:text-lg">
-                Install Now
+              <button
+                onClick={handleInstall}
+                disabled={installed}
+                className={`btn mt-6 px-6 py-2 text-base sm:text-lg font-semibold transition-all duration-200 
+                  ${
+                    installed
+                      ? "bg-gray-400 cursor-not-allowed text-white"
+                      : "btn-primary hover:opacity-90"
+                  }`}
+              >
+                {installed ? "Installed" : "Install Now"}
               </button>
             </div>
           </div>

@@ -16,7 +16,7 @@ const AllApps = () => {
     : appsData;
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-10">
       {/* Header Section */}
       <div className="text-center space-y-1 mb-8">
         <h2 className="text-2xl sm:text-3xl font-bold">Our All Applications</h2>
