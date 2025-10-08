@@ -5,35 +5,40 @@ import { FaStar } from "react-icons/fa6";
 import { Link } from "react-router";
 
 const AppData = ({ appData }) => {
-  // console.log(appData);
   const { id, image, title, downloads, ratingAvg } = appData;
-
-  // const average = averageRating(ratings);
   const formattedDownloads = formatDownloads(downloads);
 
   return (
-    <div>
+    <div className="transition-transform duration-300 hover:scale-[1.02]">
       <Link to={`/apps/${id}`}>
-        <div className=" bg-base-100 shadow-sm p-2 rounded">
-          <figure className="h-32 overflow-hidden">
+        <div className="bg-white shadow shadow-[#e2d7f1] hover:shadow-lg transition-all duration-300 p-3 sm:p-4 rounded-xl flex flex-col h-full">
+          {/* Image */}
+          <figure className="h-40 sm:h-48 lg:h-52 overflow-hidden rounded-lg">
             <img
-              className="rounded w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-lg hover:opacity-90 transition"
               src={image}
               alt={title}
             />
           </figure>
-          <div className="text-start mt-2">
-            <h2 className="text-xl font-semibold mt-4">{title}</h2>
+
+          {/* Title */}
+          <div className="text-start mt-3 flex-grow">
+            <h2 className="text-lg sm:text-xl font-semibold line-clamp-1">
+              {title}
+            </h2>
           </div>
-          <div className="flex justify-between items-center my-2">
-            <button className="flex items-center text-green-500 bg-gray-200 px-2 py-1 rounded  gap-2 font-semibold">
-              <PiDownloadSimpleThin />
+
+          {/* Stats (downloads + rating) */}
+          <div className="flex justify-between items-center mt-3 text-sm sm:text-base">
+            <span className="flex items-center text-green-600 bg-green-50 px-2 sm:px-3 py-1 rounded-full gap-1 sm:gap-2 font-medium">
+              <PiDownloadSimpleThin className="text-lg" />
               {formattedDownloads}
-            </button>
-            <button className="bg-[#FFF0E1] px-2 py-1 text-[#FF8811] font-semibold flex items-center gap-2 ">
-              <FaStar />
+            </span>
+
+            <span className="flex items-center bg-[#FFF0E1] px-2 sm:px-3 py-1 text-[#FF8811] font-medium rounded-full gap-1 sm:gap-2">
+              <FaStar className="text-lg" />
               {ratingAvg}
-            </button>
+            </span>
           </div>
         </div>
       </Link>

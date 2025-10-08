@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { useApp } from "../Hooks/useApp";
 import { formatDownloads, formatReviews } from "../utils/Average";
@@ -16,12 +16,21 @@ import {
   YAxis,
 } from "recharts";
 import toast, { Toaster } from "react-hot-toast";
+import { getDataFromLs, saveDataToLs } from "../utils/LocalStorage";
 
 const AppDetails = () => {
   const params = useParams();
   const appId = parseInt(params.id);
   const { appsData, loading } = useApp();
   const [installed, setInstalled] = useState(false);
+
+  //   useEffect
+  useEffect(() => {
+    const installedApps = getDataFromLs();
+    if (installedApps.includes(appId)) {
+      setInstalled(true);
+    }
+  }, [appId]);
 
   if (loading) return <p className="text-center py-10 text-lg">Loading...</p>;
 
@@ -30,6 +39,7 @@ const AppDetails = () => {
     return <p className="text-center py-10 text-lg">App not found.</p>;
 
   const {
+    id,
     title,
     companyName,
     image,
@@ -38,13 +48,15 @@ const AppDetails = () => {
     reviews,
     ratings,
     description,
+    size,
   } = appDetails;
 
   const totalDownloads = formatDownloads(downloads);
   const totalReviews = formatReviews(reviews);
 
-  const handleInstall = () => {
+  const handleInstall = (id) => {
     setInstalled(true);
+    saveDataToLs(id);
     toast.success(`${title} has been successfully installed!`, {
       duration: 3000,
       position: "top-center",
@@ -109,7 +121,7 @@ const AppDetails = () => {
 
             <div className="flex justify-center lg:justify-start">
               <button
-                onClick={handleInstall}
+                onClick={() => handleInstall(id)}
                 disabled={installed}
                 className={`btn mt-6 px-6 py-2 text-base sm:text-lg font-semibold transition-all duration-200 
                   ${
@@ -118,7 +130,7 @@ const AppDetails = () => {
                       : "btn-primary hover:opacity-90"
                   }`}
               >
-                {installed ? "Installed" : "Install Now"}
+                {installed ? "Installed" : `Install Now (${size} MB)`}
               </button>
             </div>
           </div>

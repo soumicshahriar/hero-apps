@@ -1,13 +1,17 @@
 import { useApp } from "../Hooks/useApp";
 import AppData from "../Components/AppData";
 import { useState } from "react";
+import Loading from "../SharedPages/Loading";
 
 const AllApps = () => {
   const [search, setSearch] = useState("");
   const { appsData, loading, error } = useApp();
 
-  if (loading) return <p className="text-center py-10 text-lg">Loading...</p>;
+  // loading start
+  if (loading) return <Loading></Loading>;
+
   if (error)
+    // loading end
     return <p className="text-center py-10 text-red-500">{error.message}</p>;
 
   const term = search.trim().toLowerCase();
