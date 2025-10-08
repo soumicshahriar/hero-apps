@@ -4,7 +4,7 @@ import { PiDownloadSimpleThin } from "react-icons/pi";
 import { FaStar } from "react-icons/fa6";
 
 const AppData = ({ appData }) => {
-  console.log(appData);
+  // console.log(appData);
   const { image, title, downloads, ratings } = appData;
 
   const average = averageRating(ratings);

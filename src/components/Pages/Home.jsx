@@ -90,7 +90,7 @@ const Home = () => {
       </div>
 
       {/* Trending Apps */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto px-2">
         {someData.map((appData) => (
           <AppData key={appData.id} appData={appData}></AppData>
         ))}
