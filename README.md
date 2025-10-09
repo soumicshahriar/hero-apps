@@ -1,6 +1,10 @@
 # 🚀 Hero IO Apps
 
-[Live link]([https://fancy-sorbet-923138.netlify.app](https://hero-app-shahriar-11.netlify.app/))
+## 🚀 Live Site
+
+Check out the live version of this project here:  
+👉 [https://hero-app-shahriar-11.netlify.app/](https://hero-app-shahriar-11.netlify.app/)
+
 
 
 ## 📱 Overview
