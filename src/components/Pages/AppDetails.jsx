@@ -72,6 +72,7 @@ const AppDetails = () => {
     <div className="bg-base-200 py-6 px-4 sm:px-6 lg:px-8">
       {/* Toast Container */}
       <Toaster />
+
       <div className="container mx-auto min-h-screen">
         {/* App Header Section */}
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">

@@ -1,16 +1,39 @@
-# React + Vite
+# 🚀 Hero IO Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📱 Overview
 
-Currently, two official plugins are available:
+**Hero IO Apps** is a modern, interactive React web application designed to showcase, explore, and manage various apps with smooth navigation, dynamic search, and local storage integration.  
+Users can browse all available apps, view detailed insights including reviews and ratings, and install or uninstall apps directly from the interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is fully responsive, optimized for performance, and includes loading animations, error handling, and a rich UI following the provided Figma design.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🧭 **Navigation System:** Includes Home, Apps, and Installation pages with active route highlighting.
+- 🎨 **Dynamic UI:** Custom header, footer, and card-based layouts built with Tailwind CSS.
+- 🔍 **Live Search:** Filters apps by title instantly, case-insensitive.
+- 📊 **Detailed App View:** Displays app info, ratings, reviews, and a Recharts-based analytics chart.
+- 💾 **LocalStorage Integration:** Apps can be installed/uninstalled with state persistence.
+- ⚙️ **Sorting & Filtering:** Sort apps by download count (High → Low / Low → High).
+- 🌐 **Error Handling:** Custom error page for invalid routes and “Not Found” messages.
+- ⏳ **Loading Animations:** Shown during navigation and search operations.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧱 Tech Stack
+
+### **Frontend**
+
+- ⚛️ **React.js** — Component-based UI library
+- 🧩 **React Router** — Navigation and routing
+- 💅 **Tailwind CSS** — Responsive and modern styling
+- 🔔 **React Toastify** — Toast notifications for installs/uninstalls
+- 💽 **LocalStorage API** — Client-side data persistence
+
+### **Development Tools**
+
+- 🧠 **Vite** — Fast build tool and dev server
+- 🧰 **ESLint & Prettier** — Code linting and formatting
+- 🧵 **Node.js + npm** — Package management

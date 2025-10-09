@@ -31,9 +31,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar bg-white shadow-sm sticky top-0 z-50 px-4 sm:px-6 md:px-10">
-      {/* Navbar Start */}
       <div className="navbar-start">
-        {/* Mobile Dropdown */}
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -60,7 +58,6 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Logo */}
         <div className="flex items-center space-x-2">
           <img
             className="w-8 h-8 sm:w-9 sm:h-9 object-contain"
@@ -76,12 +73,10 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Navbar Center (Desktop Menu) */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 space-x-2">{links}</ul>
       </div>
 
-      {/* Navbar End (Right Side) */}
       <div className="navbar-end">
         <a
           href="https://github.com/soumicshahriar"

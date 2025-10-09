@@ -121,7 +121,7 @@ const Home = () => {
 
         <Link to="/apps">
           <button className="bg-gradient-to-br from-[#632EE3] to-[#9F62F2] px-6 py-2 mt-6 rounded-lg text-white font-semibold hover:opacity-90 transition">
-            See All
+            Show All
           </button>
         </Link>
       </section>

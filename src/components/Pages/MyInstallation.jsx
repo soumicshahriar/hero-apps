@@ -5,7 +5,7 @@ import InstalledAppsData from "./InstalledAppsData";
 import toast, { Toaster } from "react-hot-toast";
 import Loading from "../SharedPages/Loading";
 
-const InstalledApps = () => {
+const MyInstallation = () => {
   const { appsData, loading } = useApp();
   const [sortOrder, setSortOrder] = useState("none");
   const [installedApps, setInstalledApps] = useState(getDataFromLs());
@@ -83,4 +83,4 @@ const InstalledApps = () => {
   );
 };
 
-export default InstalledApps;
+export default MyInstallation;
